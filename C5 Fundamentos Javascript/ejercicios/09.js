@@ -1,5 +1,5 @@
 function esNuloOIndefinido(valor) {
-  // La función recibe un argumento llamado valor.
+ // La función recibe un argumento llamado valor.
   // Si este valor es null o undefined, retorna true.
   // De lo contrario, retorna false.
   // Por ejemplo: 
@@ -8,6 +8,11 @@ function esNuloOIndefinido(valor) {
   // 22 ---> false
   // "texto" ---> false
   // Tu código:
+ return valor == null;
 }
 
 module.exports = esNuloOIndefinido;
+
+console.log(esNuloOIndefinido(null));
+console.log(esNuloOIndefinido(undefined));
+console.log(esNuloOIndefinido(0));
